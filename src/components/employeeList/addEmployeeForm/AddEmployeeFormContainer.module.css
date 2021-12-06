@@ -1,0 +1,87 @@
+.form {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: black;
+  background-color: rgb(0, 0, 0, 0.8);
+  z-index: 1000;
+  animation: fadeIn 500ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-header {
+  display: flex;
+  justify-content: space-between;
+}
+.form-header button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  min-width: auto;
+  color: rgba(0, 0, 0, 0.15);
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-header button img {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.form-container {
+  height: fit-content;
+  background: white;
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.form-content {
+  margin-top: 2rem;
+}
+.form-content input {
+  height: 2rem;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  width: 80%;
+}
+.form-submit {
+  margin-top: 2rem;
+}
+.form-footer {
+  margin-top: 2rem;
+}
+
+.form-submit button {
+  color: white;
+  border: 0;
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #6f4beb;
+  font-size: 1.1rem;
+}
